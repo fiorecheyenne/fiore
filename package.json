@@ -1,0 +1,29 @@
+{
+  "name": "fiore",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass sass -o build/css",
+    "pug-build": "pug views --out build",
+    "predeploy": "npm run copy-assets; npm run css-build; npm run pug-build",
+    "watch": "nodemon -e pug,scss,js,min.js,json -w views -w sass --exec 'npm run predeploy'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiorecheyenne/fiore.git"
+  },
+  "author": "Fiore Cheyenne Tellez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiorecheyenne/fiore/issues"
+  },
+  "homepage": "https://github.com/fiorecheyenne/fiore#readme",
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0",
+    "particles.js": "^2.0.0",
+    "pug": "^2.0.4"
+  }
+}
