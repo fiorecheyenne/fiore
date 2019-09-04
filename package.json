@@ -2,7 +2,15 @@
   "name": "fiore",
   "version": "1.0.0",
   "description": "Portfolio",
-  "main": "index.js",
+  "main": "sass/styles.scss",
+  "homepage": "https://fiorecheyenne.github.io/fiore/",
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "node-sass sass -o build/css",
@@ -18,12 +26,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fiorecheyenne/fiore/issues"
-  },
-  "homepage": "https://github.com/fiorecheyenne/fiore#readme",
-  "dependencies": {
-    "bulma": "^0.7.5",
-    "node-sass": "^4.12.0",
-    "particles.js": "^2.0.0",
-    "pug": "^2.0.4"
   }
 }
